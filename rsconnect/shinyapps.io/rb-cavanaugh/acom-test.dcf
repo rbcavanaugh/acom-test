@@ -1,0 +1,13 @@
+name: acom-test
+title: acom-test
+username:
+account: rb-cavanaugh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6562975
+bundleId: 6051012
+url: https://rb-cavanaugh.shinyapps.io/acom-test/
+when: 1656428348.38531
+lastSyncTime: 1656428348.38532
+asMultiple: FALSE
+asStatic: FALSE
