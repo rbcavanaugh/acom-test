@@ -28,6 +28,8 @@ d$clarify = NA
 d$theta = NA
 d$sem = NA
 
+nitems = 12
+
 
 getTxt <- function(v){
   txt = d$item_content[v$itnum]
@@ -153,7 +155,7 @@ server <- function(input, output, session) {
     print(head(v$results, 3))
     
     # if you've reached the max number of responses...go to results
-    if(sum(!is.na(v$results$response_num))==12){
+    if(sum(!is.na(v$results$response_num))==nitems){
       updateNavbarPage(session=session, "mainpage", selected = "results")
     } else {
       # otherwise, iterate on the i
