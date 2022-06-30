@@ -7,32 +7,60 @@
   position: absolute;
 }
 
+input[type="radio"] + span {
+  position:absolute;
+  width:200px;
+  color:transparent;
+}
 input[value="Completely"] {
-  top:10px;
-  left:150px;
+  top:35px;
+  left:75px;
+}
+
+input[value="Completely"] +span{
+  top:35px;
+  left:80px;
 }
 
 input[value="Mostly"] {
-  top:106px;
-  left:184px;
+  top:99px;
+  left:110px;
+}
+
+input[value="Mostly"] + span{
+  top:99px;
+  left:115px;
 }
 
 input[value="Somewhat"] {
   top:240px;
-  left:220px;
+  left:144px;
+}
+
+input[value="Somewhat"] + span{
+  top:240px;
+  left:149px;
 }
 
 input[value="Not very"] {
-  top:390px;
-  left:255px;
+  top:382px;
+  left:178px;
+}
+
+input[value="Not very"] + span {
+  top:382px;
+  left:183px;
 }
 
 
 input[value="Doesn't apply to me"] {
-  top:503px;
-  left:290px;
+  top:475px;
+  left:213px;
 }
 
-.radio-inline span {
-  display:none;
+
+input[value="Doesn't apply to me"] + span{
+  top:475px;
+  left:218px;
 }
+
