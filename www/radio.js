@@ -26,24 +26,22 @@ $.extend(likertRadioButtonsBinding, {
   getValue(el) {
     // Select the radio objects that have name equal to the grouping div's id
     const checkedItems = $(
-      'input:radio[name="' + Shiny.$escape(el.id) + '"]:checked'
+      'input:radio[name="option1"]:checked'
     );
 
     if (checkedItems.length === 0) {
       return null;
     }
 
-    return Number(checkedItems.val());
+    return checkedItems.val();
   },
   setValue(el, value) {
     if ($.isArray(value) && value.length === 0) {
       // Removing all checked item if the sent data is empty
-      $('input:radio[name="' + Shiny.$escape(el.id) + '"]').prop("checked", false);
+      $('input:radio[name="option1"]').prop("checked", false);
     } else {
       $(
-        'input:radio[name="' +
-          Shiny.$escape(el.id) +
-          '"][value="' +
+        'input:radio[name="option1"][value="' +
           value +
           '"]'
       ).prop("checked", true);

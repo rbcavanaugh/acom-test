@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  
+}
+
+.container input[type="radio"] {
+  position: absolute;
+}
+
+input[value="Completely"] {
+  top:10px;
+  left:150px;
+}
+
+input[value="Mostly"] {
+  top:106px;
+  left:184px;
+}
+
+input[value="Somewhat"] {
+  top:240px;
+  left:220px;
+}
+
+input[value="Not very"] {
+  top:390px;
+  left:255px;
+}
+
+
+input[value="Doesn't apply to me"] {
+  top:503px;
+  left:290px;
+}
+
+.radio-inline span {
+  display:none;
+}
